@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+/* *, *:before, *:after { */
   box-sizing: inherit;
 }
 
@@ -438,7 +438,7 @@ html {
 	width: 60rem;
 	padding: 0 0.938rem,;
 	margin: 0 auto;
-	min-width: 37,5rem;
+	min-width: 37.5rem;
 
 }
 
@@ -511,14 +511,6 @@ a#active {
 	display: block;
 }
 
-
-.introduction h2 {
-	margin: 1.625rem 0 3.125rem;
-	font-size: 2.75rem;
-	font: inherit;
-	font-weight: 300;
-}
-
 .big-button {
 	width: 9.699rem;
 	display: block;
@@ -545,9 +537,11 @@ a#active {
 /* Three Images Section */
 
 .cases {
+	background-color: #fff;
 	text-align: center;
 	overflow: hidden;
 	padding-bottom: 5rem;
+	box-sizing: border-box;
 }
 
 .cases .content {
@@ -555,13 +549,18 @@ a#active {
 	color: #1d1e21;
 }
 
-.cases > h3 {
-	font-size: 1.75rem;
+.cases h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+}
+
+.cases  h3 {
+	font-size: 1.563rem;
 	margin: 1.625rem 0 3.125rem;
 	font-weight: 400;
 	display: block;
 	text-align: center;
-	font: inherit;
 }
 
 .devices {
@@ -585,11 +584,25 @@ a#active {
 	text-align: center;
 }
 
+.social hr {
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 0;
+}
+
+.social .icons {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
 .social .icons > li {
 	border-radius: 1.25rem;
 	width: 2.5rem;
 	height: 2.5rem;
 	margin: 1.25rem 5px;
+	border: 1px solid #eaebec;
 	padding: 0.625rem 0;
 	text-align: center;
 	display: inline-block;
@@ -597,6 +610,9 @@ a#active {
 }
 
 .social h5 {
+	margin: 0;
+	padding: 0;
+	border: 0;
 	font: inherit;
 }
 
